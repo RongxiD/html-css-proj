@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .thumbnail {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid #ddd;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Thumbnail Gallery</h1>
+
+    <div class="gallery">
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_1.webp" alt="Image 1">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_2.jpg" alt="Image 2">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_3.avif" alt="Image 3">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_4.avif" alt="Image 4">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_5.webp" alt="Image 5">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_6.jpg" alt="Image 6">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_7.jpg" alt="Image 7">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_8.jpg" alt="Image 8">
+        </div>
+        <div class="thumbnail">
+            <img src="./images/Thumb/thumbnail_9.jpg" alt="Image 9">
+        </div>
+    </div>
+
+</body>
+</html>
