@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC's Bistro</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; 
+            background-color: aquamarine;
+        }
+        nav li {
+            display: inline;
+            margin: 0 10px; 
+        }
+        img {
+            width: 300px; 
+            height: 200px;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li> 
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to RC's Bistro</h1>
+        <p>Experience the finest dining in town. We offer a wide variety of dishes made with fresh, locally sourced ingredients.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Explore our delectable menu options:</p>
+        <ul>
+            <li>Appetizers</li>
+            <li>Main Courses</li>
+            <li>Desserts</li>
+            <li>Drinks</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="./images/thumbnail_1.jpg" alt="seafood spaghetti">
+        <img src="./images/thumbnail_2.jpg" alt="lasagna">
+        <img src="./images/thumbnail_3.jpg" alt="traditional meatball"> 
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="/submit_form" method="post"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y-q7KekIcc0" frameborder="0" allowfullscreen></iframe> 
+        <p><em>24 Hours Of ITALIAN FOOD In ROME - Best Roman Pizza & Local Street Food</em></p> 
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RC's Bistro</p>
+    </footer>
+
+</body>
+</html>
